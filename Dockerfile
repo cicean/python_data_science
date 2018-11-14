@@ -1,5 +1,5 @@
 FROM ubuntu:16.04 as opencv-builder
-MAINTAINER "Andrei Maksimov"
+MAINTAINER "Cicean Wang"
 
 RUN apt-get update && apt-get install -y wget ca-certificates \
     build-essential cmake pkg-config \
