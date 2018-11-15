@@ -16,6 +16,9 @@ This is fully ready Docker container with:
  - OpenCV 3
 
 We're building this container on top of [Ubuntu 16.04 Docker container](https://hub.docker.com/_/ubuntu/) ([Dockerfile](https://github.com/andreivmaksimov/python_data_science/blob/master/Dockerfile)) and [Anaconda Docker container](https://hub.docker.com/r/continuumio/anaconda3/) ([Dockerfile](https://github.com/andreivmaksimov/python_data_science/blob/master/Dockerfile.anaconda))
+```docker 
+build -f Dockerfile . -t <tag name>
+```
 
 ### Running container
 

@@ -18,7 +18,9 @@ RUN pip3 install numpy pandas sklearn matplotlib seaborn jupyter pyyaml h5py
 RUN pip3 install keras --no-deps
 
 RUN ["mkdir", "notebooks"]
-COPY conf/.jupyter /root/.jupyter
+# Set up notebook config
+COPY jupyter_notebook_config.py /root/.jupyter/
+
 COPY run_jupyter.sh /
 
 # Jupyter and Tensorboard ports
