@@ -20,6 +20,13 @@ We're building this container on top of [Ubuntu 16.04 Docker container](https://
 build -f Dockerfile . -t <tag name>
 ```
 
+Push the new docker image to your docker hub
+```angular2html
+$ docker tag first-image {docker-hub-username}/{default-repo-folder-name}:first-image
+$ docker push {docker-hub-username}/{default-repo-folder-name}:first-image
+```
+
+
 ### Running container
 
 We'll use ```notebooks``` forlder to store Jupyter Notebooks:

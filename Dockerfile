@@ -19,7 +19,7 @@ RUN pip3 install keras --no-deps
 
 RUN ["mkdir", "notebooks"]
 # Set up notebook config
-COPY jupyter_notebook_config.py /root/.jupyter/
+COPY conf/.jupyter /root/.jupyter/
 
 COPY run_jupyter.sh /
 
