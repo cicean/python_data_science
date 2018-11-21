@@ -45,8 +45,8 @@ We're using following parameters:
 - ```-v notebooks:/notebooks``` to mount just created *notebooks* folder Docker inside container
 
 Remove all container
-```docker 
-rm `docker ps --no-trunc -aq` 
+```
+docker rm `docker ps --no-trunc -aq` 
 ```
 
 &copy; [Andrei Maksimov](https://www.linkedin.com/in/avmaksimov/) / [ProgKids.ru](https://progkids.ru/)
