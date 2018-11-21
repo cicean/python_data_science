@@ -16,8 +16,8 @@ This is fully ready Docker container with:
  - OpenCV 3
 
 We're building this container on top of [Ubuntu 16.04 Docker container](https://hub.docker.com/_/ubuntu/) ([Dockerfile](https://github.com/andreivmaksimov/python_data_science/blob/master/Dockerfile)) and [Anaconda Docker container](https://hub.docker.com/r/continuumio/anaconda3/) ([Dockerfile](https://github.com/andreivmaksimov/python_data_science/blob/master/Dockerfile.anaconda))
-```docker 
-build -f Dockerfile . -t <tag name>
+```sh
+docker build -f Dockerfile . -t <tag name>
 ```
 
 Push the new docker image to your docker hub
@@ -45,7 +45,7 @@ We're using following parameters:
 - ```-v notebooks:/notebooks``` to mount just created *notebooks* folder Docker inside container
 
 Remove all container
-```
+```sh
 docker rm `docker ps --no-trunc -aq` 
 ```
 
