@@ -49,4 +49,9 @@ Remove all container
 docker rm `docker ps --no-trunc -aq` 
 ```
 
+Check docker container details
+```
+docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
+```
+
 &copy; [Andrei Maksimov](https://www.linkedin.com/in/avmaksimov/) / [ProgKids.ru](https://progkids.ru/)
